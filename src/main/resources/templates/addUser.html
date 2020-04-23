@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="shortcut icon" href="../resources/favicon.ico" th:href="@{/static/favicon.ico}"/>
+<head>
+    <meta charset="UTF-8">
+    <title>添加数据</title>
+
+</head>
+<body>
+    <form th:action="@{/user/addUser}" method="post">
+        姓名：<input type="text" name="username"><br>
+        性别：<input type="text" name="usersex"><br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
